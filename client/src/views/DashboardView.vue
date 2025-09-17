@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard">
     <h1>Bem-vindo ao Dashboard!</h1>
-    <p>Você está logado.</p>
+    <p></p>
 
     <div v-if="loadingSummary">Carregando resumo financeiro...</div>
     <div v-else-if="summaryError" class="error-message">{{ summaryError }}</div>
