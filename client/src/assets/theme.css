@@ -1,0 +1,55 @@
+:root {
+  /* Cores para o modo claro */
+  --background-color: #f4f7f6;
+  --text-color: #2c3e50;
+  --primary-color: #42b983;
+  --secondary-color: #34495e;
+  --card-background: #ffffff;
+  --border-color: #e0e0e0;
+  --input-background: #fdfdfd;
+  --input-border: #cccccc;
+  --button-hover-color: #368a68;
+  --error-color: #e74c3c;
+  --success-color: #28a745;
+}
+
+.dark-mode {
+  /* Cores para o modo escuro */
+  --background-color: #2c3e50;
+  --text-color: #ecf0f1;
+  --primary-color: #42b983;
+  --secondary-color: #a4c639;
+  --card-background: #34495e;
+  --border-color: #555555;
+  --input-background: #2a3b4c;
+  --input-border: #444444;
+  --button-hover-color: #368a68;
+  --error-color: #ff6b6b;
+  --success-color: #5cb85c;
+}
+
+/* Estilos globais para aplicar as variáveis */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Reset básico para elementos de formulário */
+input,
+select,
+button,
+textarea {
+  color: var(--text-color);
+  background-color: var(--input-background);
+  border: 1px solid var(--input-border);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--card-background);
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
