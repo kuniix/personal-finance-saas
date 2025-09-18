@@ -38,3 +38,7 @@ CREATE TABLE categories (
 
 ALTER TABLE transactions
 ADD COLUMN category_id INTEGER REFERENCES categories(id) ON DELETE SET NULL;
+
+-- Adiciona a coluna transaction_id na tabela debts para vincular à transação de saída
+ALTER TABLE debts
+ADD COLUMN transaction_id INTEGER REFERENCES transactions(id) ON DELETE SET NULL;

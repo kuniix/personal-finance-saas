@@ -51,7 +51,8 @@ const router = createRouter({
       path: '/dashboard',
       name: 'dashboard',
       // Criar um componente DashboardView futuramente
-      component: () => import('../views/DashboardView.vue')
+      component: () => import('../views/DashboardView.vue'),
+      meta: { requiresAuth: true }
     },
     {
       path: '/debts',
